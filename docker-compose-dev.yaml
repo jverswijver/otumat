@@ -1,0 +1,12 @@
+# docker-compose -f docker-compose-dev.yaml up --build
+version: '2.2'
+services:
+  app:
+    image: python:3.7.12-bullseye
+    working_dir: /tmp
+    command:
+      - sh
+      - -c
+      - |
+        apt install git -y
+        pip install git+https://github.com/jverswijver/otumat.git@update_dependencies
