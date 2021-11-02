@@ -29,5 +29,5 @@ setuptools.setup(
         'console_scripts': [
             f'{package.__name__}={package.__name__}.command_line:{package.__name__}'],
     },
-    install_requires=['cryptography', 'flask', 'appdirs'],
+    install_requires=['flask', 'appdirs'],
 )
